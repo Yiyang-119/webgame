@@ -1,0 +1,47 @@
+Date : 2024-12-16 20:10:39
+Directory : c:\Users\tnblt\Desktop\phaser-game
+Total : 17 files,  95336 codes, 116506 comments, 37170 blanks, all 249012 lines
+
+Languages
++-------------+------------+------------+------------+------------+------------+
+| language    | files      | code       | comment    | blank      | total      |
++-------------+------------+------------+------------+------------+------------+
+| JavaScript  |         15 |     95,288 |    116,500 |     37,162 |    248,950 |
+| Django HTML |          1 |         26 |          0 |          1 |         27 |
+| Python      |          1 |         22 |          6 |          7 |         35 |
++-------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                      | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                         |         17 |     95,336 |    116,506 |     37,170 |    249,012 |
+| . (Files)                                                 |          1 |         26 |          0 |          1 |         27 |
+| libs                                                      |          1 |     94,243 |    116,298 |     36,937 |    247,478 |
+| src                                                       |         14 |      1,045 |        202 |        225 |      1,472 |
+| tools                                                     |          1 |         22 |          6 |          7 |         35 |
++-----------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------+-------------+------------+------------+------------+------------+
+| filename                                                  | language    | code       | comment    | blank      | total      |
++-----------------------------------------------------------+-------------+------------+------------+------------+------------+
+| c:\Users\tnblt\Desktop\phaser-game\index.html             | Django HTML |         26 |          0 |          1 |         27 |
+| c:\Users\tnblt\Desktop\phaser-game\libs\phaser.js         | JavaScript  |     94,243 |    116,298 |     36,937 |    247,478 |
+| c:\Users\tnblt\Desktop\phaser-game\src\ControlScene.js    | JavaScript  |         69 |         17 |         13 |         99 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Dialog.js          | JavaScript  |         64 |          8 |         10 |         82 |
+| c:\Users\tnblt\Desktop\phaser-game\src\DialogManager.js   | JavaScript  |         94 |          9 |         14 |        117 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene1.js          | JavaScript  |         24 |         12 |          8 |         44 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene2.js          | JavaScript  |        124 |         19 |         17 |        160 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene3.js          | JavaScript  |         54 |         11 |         10 |         75 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene4.js          | JavaScript  |         95 |         19 |         22 |        136 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene5.js          | JavaScript  |         72 |         19 |         22 |        113 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene6.js          | JavaScript  |        306 |         64 |         77 |        447 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene7.js          | JavaScript  |         84 |         14 |         16 |        114 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene8.js          | JavaScript  |          8 |          2 |          4 |         14 |
+| c:\Users\tnblt\Desktop\phaser-game\src\Scene9.js          | JavaScript  |          8 |          2 |          2 |         12 |
+| c:\Users\tnblt\Desktop\phaser-game\src\TransitionScene.js | JavaScript  |         21 |          4 |          6 |         31 |
+| c:\Users\tnblt\Desktop\phaser-game\src\main.js            | JavaScript  |         22 |          2 |          4 |         28 |
+| c:\Users\tnblt\Desktop\phaser-game\tools\img_edit.py      | Python      |         22 |          6 |          7 |         35 |
+| Total                                                     |             |     95,336 |    116,506 |     37,170 |    249,012 |
++-----------------------------------------------------------+-------------+------------+------------+------------+------------+
