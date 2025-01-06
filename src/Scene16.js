@@ -55,11 +55,11 @@ class Scene16 extends Phaser.Scene {
         this.dialogQueue = [
             {
                 speaker: '猫',
-                text: '这里是殡仪馆的厅2适用于祭拜的地方',
+                text: 'This is the second hall of the funeral home, the area for ceremonies and offerings.',
                 dialogKey: 'dialog-cat',
             }, {
                 speaker: '猫',
-                text: '现在，让我们先设计一下棺材吧',
+                text: 'Now, lets start by designing the coffin.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show": "16-s" }, { "show&click": ["16-sc1", "16-bc1"] }, { "show&click": ["16-sc2", "16-bc2"] }, { "show&click": ["16-sc3", "16-bc3"] }],
                 displayDuration: 2000
@@ -161,7 +161,7 @@ class Scene16 extends Phaser.Scene {
             {
                 key: '16-sc1',
                 imageKey: '16-sc1-选项框内棺材1',
-                x: -300,
+                x: -700,
                 y: 450,
                 targetOffsetX: 0,    // 相对于选项框的水平偏移量
                 targetOffsetY: 0     // 相对于选项框的垂直偏移量
@@ -181,7 +181,7 @@ class Scene16 extends Phaser.Scene {
             {
                 key: '16-sc3',
                 imageKey: '16-sc3-选项框内棺材3',
-                x: 300,
+                x: 700,
                 y: 450,
                 targetOffsetX: 0,    // 相对于选项框的水平偏移量
                 targetOffsetY: 0     // 相对于选项框的垂直偏移量
@@ -443,31 +443,31 @@ class Scene16 extends Phaser.Scene {
         this.secondDialogQueue = [
             {
                 speaker: '猫',
-                text: '最后，将祭拜的东西放在桌上',
+                text: 'Finally, place the offerings on the table.',
                 dialogKey: 'dialog-cat',
-                trigger: [{ "show&drag": "16-o1" }, { "show&drag": "16-o2" }, { "show&drag": "16-o3" }, { "show&drag": "16-o4" }, { "show&drag": "16-o5" }, { "show&drag": "16-o6" },],
+                trigger: [{ "show&drag": "16-o1" },{ "show&drag": "16-o2" },{ "show&drag": "16-o3" },{ "show&drag": "16-o4" },{ "show&drag": "16-o5" },{ "show&drag": "16-o6" }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '很棒!这一次我对你刮目相看了',
+                text: 'Great! I am impressed this time.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '！！！',
+                text: '!!!',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '人',
-                text: '老板，你忽然好善良',
+                text: ' Boss, you are suddenly so kind.',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '猫',
-                text: '【喵】哼',
+                text: 'Hmph',
                 dialogKey: 'dialog-cat',
             }, {
                 speaker: '猫',
-                text: '等结束完仪式，咱们去火葬馆陪死者家属走接下来的仪式？',
+                text: 'Once the ceremony is finished, we will head to the crematorium to accompany the family for the next part of the ritual.',
                 dialogKey: 'dialog-cat',
             }
         ];
@@ -491,7 +491,7 @@ class Scene16 extends Phaser.Scene {
                             .setOrigin(0, 0);
 
                         // 定义要显示的文字内容
-                        const fullText = '几天过去......';
+                        const fullText = ' A few days later';
                         let currentText = '';
 
                         // 在屏幕中心添加文字对象，初始内容为空，透明度为 0
@@ -564,42 +564,42 @@ class Scene16 extends Phaser.Scene {
 
             {
                 speaker: '猫',
-                text: '走，咱们出发',
+                text: 'Lets go, we are heading out.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '好......诶？',
+                text: 'OK... huh?',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:你们好',
+                text: 'Family of the departed:Hello.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '人',
-                text: '【困惑】您好，您手里这是？',
+                text: '[Confused] Hello, whats this you are holding?',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:【拿着骨灰盒】不好意思，昨天您不在，我们找到殡仪馆其他人，带她去火化了',
+                text: 'Family of the departed:[Holding the urn] Sorry you werent here yesterday. We found someone else at the funeral home and had her cremated.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '人',
-                text: '哪有哪有？您应该提前跟我说的，按理来讲是我带着您去的',
+                text: 'Oh ,no! You should ve let me know beforehand! I should ve been the one to take you as the rule.',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:没事的 主要是我们找到大师算了，今天最适宜下葬，太着急忘记和您打电话了',
+                text: 'Family of the departed:Its OK, we found a master to do the divination. Today was the most auspicious day for burial, and we were so rushed I forgot to call you.',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '人',
-                text: '理解，那现在我们直接出发去墓园土葬吧',
+                text: ' I understand. Well, now lets go straight to the cemetery for the burial.',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:好的，咱们走',
+                text: 'Family of the departed:Alright, lets go.',
                 dialogKey: 'dialog-user',
             },
         ];

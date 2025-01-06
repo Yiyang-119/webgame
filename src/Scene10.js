@@ -24,7 +24,7 @@ class Scene10 extends Phaser.Scene {
             .setOrigin(0, 0);
 
         // 定义要显示的文字内容
-        const fullText = '在上一次的游戏过程当中，你体验了入殓师的大致流程，在接下来的故事当中，你将会体验不一样的殡葬流程，这一次学习的内容会比上一次多一点，请加油，入殓师。';
+        const fullText = 'In the previous gameplay, you experienced the general process of a mortician. You will experience a different set of funeral procedures in the upcoming story. This time, there will be more to learn than last time. Please do your best, mortician.';
         let currentText = '';
 
         // 在屏幕中心添加文字对象，初始内容为空，透明度为 0

@@ -19,7 +19,7 @@ export default class DialogManager {
             textOffsetX: options.textOffsetX || 0,
             textOffsetY: options.textOffsetY || 0,
             textStyle: options.textStyle || {
-                fontSize: '80px',
+                fontSize: '40px',
                 color: '#fffff0',
                 wordWrap: { width: 1500, useAdvancedWrap: true }
             }

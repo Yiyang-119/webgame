@@ -32,26 +32,26 @@ export default class Scene4 extends Phaser.Scene {
 
         // 定义对话内容队列
         this.dialogQueue = [
-            { speaker: '人', text: '咦？这里是哪里？', dialogKey: 'db-4-user' },
-            { speaker: '猫', text: '哈？你没有仔细观看殡仪馆手册吗？这是在本王的车上！！', dialogKey: 'db-4-cat' },
-            { speaker: '人', text: '？你什么时候给我手册了', dialogKey: 'db-4-user' },
-            { speaker: '猫', text: '哦，忘记了...(挠挠头)', dialogKey: 'db-4-cat' },
-            { speaker: '人', text: '内心：这臭猫，自己的错还能怪我身上！', dialogKey: 'db-4-user' },
-            { speaker: '猫', text: '【眯起眼睛】人类，你在怪本王吗？', dialogKey: 'db-4-cat' },
-            { speaker: '人', text: '哈哈哈哪里敢呀？ 我都听你的，你说什么都对哈哈哈', dialogKey: 'db-4-user' },
-            { speaker: '人', text: '（臭猫！臭猫！臭猫！臭猫！看我不骂死你！！）', dialogKey: 'db-4-user' },
-            { speaker: '猫', text: '哼！那就好', dialogKey: 'db-4-cat' },
-            { speaker: '人', text: '所以猫老板，咱们现在是要去哪里？', dialogKey: 'db-4-user' },
-            { speaker: '猫', text: '去你职业生涯中的第一位死者家里', dialogKey: 'db-4-cat' },
+            { speaker: '人', text: ' Huh? Where is this place?', dialogKey: 'db-4-user' },
+            { speaker: '猫', text: 'Huh? Didnt you read the funeral home manual carefully? This is in my car!', dialogKey: 'db-4-cat' },
+            { speaker: '人', text: '? When did you give me the manual?', dialogKey: 'db-4-user' },
+            { speaker: '猫', text: '[Thinks for two seconds, scratches head] Oh, I forgot', dialogKey: 'db-4-cat' },
+            { speaker: '人', text: '(This stinky cat, you can blame me for your own fault!)', dialogKey: 'db-4-user' },
+            { speaker: '猫', text: ' [narrowing his eyes] Human, are you blaming the king?', dialogKey: 'db-4-cat' },
+            { speaker: '人', text: 'Hahaha how do I dare? I will never. Whatever you say is right.', dialogKey: 'db-4-user' },
+            { speaker: '人', text: '(Stinky cat! Stinky cat! Stinky cat! Stinky cat!)', dialogKey: 'db-4-user' },
+            { speaker: '猫', text: 'Hmph! That is good.', dialogKey: 'db-4-cat' },
+            { speaker: '人', text: 'So Boss Cat, where are we going now?', dialogKey: 'db-4-user' },
+            { speaker: '猫', text: 'To the home of the first dead person in your career', dialogKey: 'db-4-cat' },
             { speaker: '人', text: '！！！', dialogKey: 'db-4-user' },
-            { speaker: '人', text: '什么？这么快', dialogKey: 'db-4-user' },
-            { speaker: '猫', text: '那要不然呢？咋了，再多待几天在Atropos’殡仪馆养老？', dialogKey: 'db-4-cat' },
+            { speaker: '人', text: 'What? So soon.', dialogKey: 'db-4-user' },
+            { speaker: '猫', text: 'Well, what else? What, stay a few more days to retire at Atropos Funeral Home?', dialogKey: 'db-4-cat' },
             { speaker: '人', text: '........', dialogKey: 'db-4-user' },
-            { speaker: '人', text: '那倒也不是', dialogKey: 'db-4-user' },
-            { speaker: '猫', text: '好了，不跟你废话了，现在我给你第一位死者的档案袋，这里交代了她的一些基本信息，仔细看！', dialogKey: 'db-4-cat' },
-            { speaker: '人', text: '【困惑】老板，这怎么打开？', dialogKey: 'db-4-user' },
-            { speaker: '猫', text: '【眼睛睁大】你蠢啊？点击空白部分！！！', dialogKey: 'db-4-cat' },
-            { speaker: '人', text: '（切，凶什么，臭猫）', dialogKey: 'db-4-user' },
+            { speaker: '人', text: 'that is not true', dialogKey: 'db-4-user' },
+            { speaker: '猫', text: 'Okay, no more nonsense with you, now I will give you the first bit of the deceaseds dossier bag, which explains some of her basic information, read it carefully!', dialogKey: 'db-4-cat' },
+            { speaker: '人', text: '[confused] Boss, how do I open this?', dialogKey: 'db-4-user' },
+            { speaker: '猫', text: '[Eyes widen] Are you stupid? Click on the blank part!!!', dialogKey: 'db-4-cat' },
+            { speaker: '人', text: '（ So mean, stinky cat!）', dialogKey: 'db-4-user' },
         ];
 
         // 创建对话管理器，并在对话结束时执行zoomOutScene
@@ -98,10 +98,10 @@ export default class Scene4 extends Phaser.Scene {
 
                 // 定义对话内容队列
                 this.dialogQueue = [
-                    { speaker: '人', text: '哦哦！我明白了', dialogKey: 'db-4-user' },
-                    { speaker: '猫', text: '你最好是真明白了，别给我出什么差错', dialogKey: 'db-4-cat' },
+                    { speaker: '人', text: ' Ohhhh! I know.', dialogKey: 'db-4-user' },
+                    { speaker: '猫', text: '[Cold grunt] You better really get it and dont make any mistakes in this matter', dialogKey: 'db-4-cat' },
                     { speaker: '人', text: '.......', dialogKey: 'db-4-user' },
-                    { speaker: '人', text: '（呵呵）', dialogKey: 'db-4-user' },
+                    { speaker: '人', text: '（well well）', dialogKey: 'db-4-user' },
                 ];
 
                 // 创建对话管理器，并在对话结束时执行zoomOutScene

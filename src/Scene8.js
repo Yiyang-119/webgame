@@ -40,8 +40,8 @@ export default class Scene8 extends Phaser.Scene {
 
         // 定义初始对话内容队列
         this.dialogQueue = [
-            { speaker: '火葬场员工', text: '火葬场员工：你们好！这里是火葬馆接下来请将尸体交给我们', dialogKey: 'dialog-user' },
-            { speaker: '人', text: '好的', dialogKey: 'dialog-user' },
+            { speaker: '火葬场员工', text: 'Crematorium Staff: Hello! This is the crematorium. Please hand over the body to us', dialogKey: 'dialog-user' },
+            { speaker: '人', text: 'OK', dialogKey: 'dialog-user' },
         ];
 
         // 创建对话管理器，并在对话结束时执行后续操作
@@ -161,8 +161,8 @@ export default class Scene8 extends Phaser.Scene {
     continueAfterCarAnimation() {
         // 定义后续对话内容队列
         this.dialogQueue = [
-            { speaker: '火葬场员工', text: '好的，接下来请静静等待一段时间', dialogKey: 'dialog-user' },
-            { speaker: '人', text: '好的', dialogKey: 'dialog-user' },
+            { speaker: '火葬场员工', text: 'Crematorium Staff: "Alright, please wait here quietly for the next step.', dialogKey: 'dialog-user' },
+            { speaker: '人', text: 'Ok', dialogKey: 'dialog-user' },
         ];
 
         // 创建对话管理器，并在对话结束时执行等待动画
@@ -188,7 +188,7 @@ export default class Scene8 extends Phaser.Scene {
             duration: 1000,
             onComplete: () => {
                 this.time.delayedCall(2000, () => {
-                    const txt = this.add.text(this.centerX, this.centerY, '30分钟过去了......', { fontSize: '80px', fill: '#ffffff' }).setOrigin(0, 0).setDepth(4)
+                    const txt = this.add.text(this.centerX, this.centerY, '30 minutes later......', { fontSize: '80px', fill: '#ffffff' }).setOrigin(0, 0).setDepth(4)
                     this.time.delayedCall(2000, () => {
                         blackScreen.destroy();
                         txt.destroy();
@@ -210,7 +210,7 @@ export default class Scene8 extends Phaser.Scene {
     processingComplete() {
         // 定义处理完成后的对话内容队列
         this.dialogQueue = [
-            { speaker: '火葬场员工', text: '火葬场员工:现在好了，请家属来拿骨灰盒吧', dialogKey: 'dialog-user' },
+            { speaker: '火葬场员工', text: 'Crematorium Staff: OK now, please ask the family to come and take the urn', dialogKey: 'dialog-user' },
         ];
 
         // 创建对话管理器，并在对话结束时设置骨灰盒交互
@@ -304,10 +304,10 @@ export default class Scene8 extends Phaser.Scene {
 
         // 定义对话内容队列
         this.dialogQueue = [
-            { speaker: '死者家属', text: '好的，谢谢您', dialogKey: 'dialog-user' },
-            { speaker: 'Atropos’', text: '【喵】走，快去帮助人家海葬！！', dialogKey: 'dialog-user' },
-            { speaker: '人', text: '我看您写的是选择海葬，现在跟我们一起踏上我们殡仪馆的轮船吧，我们来帮助您', dialogKey: 'dialog-user' },
-            { speaker: '死者家属', text: '好的', dialogKey: 'dialog-user' },
+            { speaker: '死者家属', text: 'Family of the departed:  [Receiving the urn] Okay, thank you!', dialogKey: 'dialog-user' },
+            { speaker: 'Atropos’', text: '[Meowing] Go, go help people with sea burials!', dialogKey: 'dialog-user' },
+            { speaker: '人', text: 'I see you wrote that you choose sea burial, now come with us and step onto our funeral home ship, lets help you!', dialogKey: 'dialog-user' },
+            { speaker: '死者家属', text: 'Ok', dialogKey: 'dialog-user' },
         ];
 
         // 创建对话管理器，并在对话结束时淡出场景

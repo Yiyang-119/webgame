@@ -40,104 +40,104 @@ class Scene17 extends Phaser.Scene {
         this.dialogQueue = [
             {
                 speaker: '人',
-                text: '（好美的地方）',
+                text: ' (What a beautiful place.)',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '那可不，专门挑选了一个最美的地方当墓园，这附近什么都不缺',
+                text: 'Of course, we picked the most beautiful spot for the cemetery. This place has everything you need.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '老板厉害',
+                text: 'You are impressive, boss.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '死者家属',
-                text: '死者家属:【手指一个空旷的地方】是在这里吗',
+                text: 'Family of the departed: [Pointing to an open area] Is it here?',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '人',
-                text: '是的',
+                text: 'Yes, right here.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '死者家属',
-                text: '死者家属:好的',
+                text: 'Family of the departed: Okay.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '死者家属',
-                text: '【死者家属:哽咽】禾禾她....是一个很棒的孩子，我记得她小的时候软软的喊我妈妈......那个时候，是几岁的时候？',
+                text: 'Family of the departed:[Choking up] Wanhe, she... she was such a wonderful child. I remember when she was little, she d call me "Mommy" in that soft voice... how old was she back then?',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '死者家属',
-                text: '死者家属:【沉默一会】大概七岁吧......',
+                text: 'Family of the departed:[Pauses] About seven, I think...',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '死者家属',
-                text: '死者家属:【苦笑】我一直期待着，她长大了是什么样子，会不会穿着长长的裙子，手里抱着最喜欢的娃娃，在成人礼那年跟我们说着自己对于未来的幻想和期待......我和她爸爸，一直这么想着。可是谁也没有料到，她会在15岁那天，跟我去医院那天，确诊成癌症......我们以为......她可以永远快乐长大，没想到连这个都成为了奢求......',
+                text: 'Family of the departed: [Bitter smile] I always wondered what she would be like growing up. Would she wear long dresses, carry her favourite doll, and discuss her dreams and hopes during her coming-of-age ceremony... Her dad and I always thought about that. But no one expected that on her 15th birthday, the day we went to the hospital... she was diagnosed with cancer... We thought... she d grow up happy forever. Never thought even that would become a luxury...',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '旁白',
-                text: '（远处传来急促的奔跑声，众人回头）',
+                text: '（In the distance, hurried footsteps can be heard. Everyone turns around.）',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '医生',
-                text: '禾禾妈妈！',
+                text: 'Mom of Wanhe',
                 dialogKey: 'dialog-doctor',
             },
             {
                 speaker: '死者家属',
-                text: '死者家属:【疑惑】杨医生？您怎么在这里',
+                text: 'Family of the departed:[Confused] "Dr. Yang? What are you doing here?',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '医生',
-                text: '【着急】我以为明天才是她的下葬时间，差点错过了！这里有一封信，是禾禾让我们在下葬当天交给您的，这里面，有她想对您们说的话',
+                text: '[Urgently] "I thought her burial was tomorrow! I almost missed it! Heres a letter. Wanhe wanted me to give it to you on the day of her burial. It contains things she wanted to say to you."',
                 dialogKey: 'dialog-doctor',
             },
             {
                 speaker: '死者家属',
-                text: '死者家属:【接过信封】！',
+                text: 'Family of the departed:  [Takes the envelope] ！',
                 dialogKey: 'dialog-user',
                 trigger: [{ "show&click": "17-en" }, { "show&click": "17-en2", "destroy": ["17-en", "17-en2"] },],
                 displayDuration: 2000
             },
             {
                 speaker: '死者家属',
-                text: '死者家属:【哭】禾禾，爸爸妈妈答应你！',
+                text: 'Family of the departed: 死者家属: [Crying] Wanhe, Mom and Dad promise you!',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '人',
-                text: '（呜呜呜呜呜呜）',
+                text: '（crying,crying,crying）',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '【喵】呜呜呜呜呜呜',
+                text: '(crying,crying,crying)',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '旁白',
-                text: '（大家一起哭了一会）',
+                text: '(Everyone cries together for a moment.)',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '死者家属',
-                text: '死者家属:下葬吧，我们想让她早一点去她想的那个美好世界',
+                text: 'Family of the departed: Lets bury her. We want her to go to the beautiful world shes dreamed of as soon as possible.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '人',
-                text: '【哽咽】好的',
+                text: ' [Choking up] Okay.',
                 dialogKey: 'dialog-user',
             },
         ];
@@ -176,7 +176,7 @@ class Scene17 extends Phaser.Scene {
                 this.transitionManager.fadeOut({
                     onComplete: () => {
                         // 切换到下一个场景
-                        this.scene.start('Scene2');
+                        this.scene.start('Scene18');
                     }
                 });
             }

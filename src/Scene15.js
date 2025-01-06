@@ -44,55 +44,55 @@ class Scene15 extends Phaser.Scene {
 
             {
                 speaker: '死者家属',
-                text: '死者家属:你们好！',
+                text: 'Family of the departed:Hello.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '人',
-                text: '你好，我是Atropos殡仪馆的工作人员！我们昨晚已经给叶晚禾画好妆了，穿好寿衣了。现在，我们该给孩子进行葬礼风格的确定以及布置，请问您这边有什么对于葬礼的要求吗？',
+                text: 'Hello, Im from Atropos Funeral Home! We finished preparing Ms. Ye Wanhe last night—her makeup and burial clothes are all set. Now, we need to determine the funeral theme and set everything up. Do you have any specific preferences for the ceremony?',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:好的，谢谢您。葬礼的风格......',
+                text: 'Family of the departed:Thank you. For the funeral theme…',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:【沉思片刻】请打扮成甜品主题的吧',
+                text: 'Family of the departed:[Pauses to think for a moment] Please make it a dessert theme.',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:禾禾她去世之前一直在忌甜品......但是她其实特别爱吃甜的',
+                text: 'Family of the departed:Before she passed, Wanhe avoided desserts… but loved sweets so much.',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:【苦笑】还是小孩子啊 ......',
+                text: 'Family of the departed:[Laughs bitterly] She was just a kid…',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '人',
-                text: '好的',
+                text: 'Ok',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '死者家属',
-                text: '死者家属:【哭泣】她特别喜欢粉色，请帮她将葬礼的颜色整体装扮成粉色......哦对，如果可以的话，哪些常用的祭拜物品也请弄成甜品风格的',
+                text: 'Family of the departed:[Crying] She loved pink. Please decorate the entire funeral in pink… Oh, and if possible, could you also make the offerings and ritual items match the dessert theme?',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '人',
-                text: '好的，也请您节哀，我们一定会让禾禾在天之力灵满意的',
+                text: 'Of course. Please accept our condolences. We’ll ensure Wanhe is at peace and satisfied in the afterlife.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '【喵】是啊',
+                text: 'Yes, we will take care of everything.',
                 dialogKey: 'dialog-cat',
 
             }, {
                 speaker: '死者家属',
-                text: '死者家属:【停止哭泣】谢谢您们，那我交给您了',
+                text: 'Family of the departed:[Stops crying] Thank you. I will leave it in your hands.',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '人',
-                text: '好的，请放心',
+                text: 'Please dont worry. We will take care of everything.',
                 dialogKey: 'dialog-user',
             },
         ];
@@ -131,7 +131,7 @@ class Scene15 extends Phaser.Scene {
                 x: 500,
                 y: 500,
                 targetOffsetX: 100,    // 相对于角色的水平偏移量
-                targetOffsetY: -75     // 相对于角色的垂直偏移量
+                targetOffsetY: -125     // 相对于角色的垂直偏移量
             },
             {
                 key: '15-c5',
@@ -159,7 +159,7 @@ class Scene15 extends Phaser.Scene {
                             .setOrigin(0, 0);
 
                         // 定义要显示的文字内容
-                        const fullText = '第二天早上......';
+                        const fullText = '(morning of the following day)';
                         let currentText = '';
 
                         // 在屏幕中心添加文字对象，初始内容为空，透明度为 0
@@ -219,8 +219,8 @@ class Scene15 extends Phaser.Scene {
         // 开始对话
         this.transitionManager.fadeIn({
             onComplete: () => {
-                // this.dialogManager.start();
-                this.secondDialog()
+                this.dialogManager.start();
+                //this.secondDialog()
             }
         });
     }
@@ -234,34 +234,34 @@ class Scene15 extends Phaser.Scene {
 
             {
                 speaker: '猫',
-                text: '你来了，现在我们开始布置吧',
+                text: 'You are here. Now, lets start setting up.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '诶？这么快',
+                text: 'Huh? So soon?',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '猫',
-                text: '没错，这次的葬礼风格比较特别，所以需要提前准备，我之前已经让人买好了相关的物品，开始吧',
+                text: 'Yes, thats right. This funeral theme is a bit special, so we must prepare beforehand. I have already purchased the necessary items, so let’s begin.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '好的',
+                text: 'Okay',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '猫',
-                text: '首先 先从这里开始吧，看到你面前的桌子了吗？',
+                text: 'First, lets begin here. Do you see the table in front of you？',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '看到了',
+                text: ' I see it.',
                 dialogKey: 'dialog-user',
             }, {
                 speaker: '猫',
-                text: '这是给孩子准备的贡品桌子，现在请帮她设计一下摆放风格，好好装饰吧',
+                text: 'This is the offering table for the child. Please help me arrange the items and decorate them with care.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "15-c1" }, { "show&drag": "15-c2" }, { "show&drag": "15-c3" }, { "show&drag": "15-c4" }, { "show&drag": "15-c5" },],
                 displayDuration: 2000
@@ -407,12 +407,12 @@ class Scene15 extends Phaser.Scene {
 
             {
                 speaker: '猫',
-                text: '做的不错，现在请打开右手边的门，咱们去下一个厅吧',
+                text: 'Nice work. Now, please open the door on your right. Lets move on to the next room.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '旁白',
-                text: '点击右手边的门把手',
+                text: '(Click the door handle on the right.)',
                 dialogKey: 'dialog-user',
             }
         ];

@@ -31,42 +31,42 @@ class Scene12 extends Phaser.Scene {
         this.dialogQueue = [
             {
                 speaker: '猫',
-                text: '我们到了',
+                text: 'We are here.',
                 dialogKey: 'dialog-cat'
             },
             {
                 speaker: '人',
-                text: '这家医院好大，咱们走哪个科室',
+                text: 'This hospital is so big. Which department are we going to?',
                 dialogKey: 'dialog-user'
             },
             {
                 speaker: '猫',
-                text: '咱们去太平间！',
+                text: 'We are going to the morgue!',
                 dialogKey: 'dialog-cat'
             },
             {
                 speaker: '人',
-                text: '不好意思啊，没来过......',
+                text: 'Sorry, I have never been here before...',
                 dialogKey: 'dialog-user'
             },
             {
                 speaker: '医生',
-                text: '【忽然出现】你们来了？是来抬走尸体的吧',
+                text: 'Doctor: [Suddenly appearing] Oh, you are here? To take the body, right?',
                 dialogKey: 'dialog-user'
             },
             {
                 speaker: '医生',
-                text: '这个女孩是得癌症化疗去世的，之前一直在我们医院',
+                text: 'Doctor: This girl passed away from cancer after chemotherapy. She was under our care until the end.',
                 dialogKey: 'dialog-user'
             },
             {
                 speaker: '医生',
-                text: '可能需要你们给她接一顶头发，她的气色不太好，请好好进行化妆，后续的情况等家属跟你们联系吧，这孩子生前也很辛苦的，拜托你们了',
+                text: 'Doctor: You might need to give her a wig. Her complexion isn t well. Please do her makeup carefully. The family will contact you later to discuss the next steps. This girl had a tough life. Please take good care of her.',
                 dialogKey: 'dialog-user'
             },
             {
                 speaker: '人',
-                text: '好的',
+                text: 'Ok',
                 dialogKey: 'dialog-user'
             }
         ];

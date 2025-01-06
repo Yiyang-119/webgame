@@ -33,10 +33,10 @@ export default class Scene5 extends Phaser.Scene {
 
         // 定义对话内容队列
         this.dialogQueue = [
-            { speaker: '猫', text: '我们到了', dialogKey: 'db-5-cat', textOffsetX: +100, textOffsetY: -50 },
-            { speaker: '人', text: '哇！好气派的大门', dialogKey: 'db-5-user' },
-            { speaker: '猫', text: '瞧你没出息那样', dialogKey: 'db-5-cat' },
-            { speaker: '死者家属', text: '你来了？快进来，点击大门就可以了', dialogKey: 'db-5-cat' }
+            { speaker: '猫', text: 'Here we are', dialogKey: 'db-5-cat', textOffsetX: +100, textOffsetY: -50 },
+            { speaker: '人', text: 'Wow! What a grand gate!', dialogKey: 'db-5-user' },
+            { speaker: '猫', text: 'Look at you, you have never seen a good one before', dialogKey: 'db-5-cat' },
+            { speaker: '死者家属', text: 'Just click the door and start your work!', dialogKey: 'db-5-cat' }
         ];
 
         // 创建对话管理器，并在对话结束时执行zoomOutScene

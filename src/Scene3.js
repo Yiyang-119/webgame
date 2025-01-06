@@ -22,7 +22,7 @@ export default class Scene3 extends Phaser.Scene {
             .setOrigin(0, 0);
 
         // 定义要显示的文字内容
-        const fullText = '你是一名私人殡仪馆的入殓师，今天是你入职的第一天......';
+        const fullText = 'You are an embalmer at a private funeral home and today is your first day on the job ......';
         let currentText = '';
 
         // 在屏幕中心添加文字对象，初始内容为空，透明度为 0

@@ -25,6 +25,7 @@ class Scene14 extends Phaser.Scene {
         this.load.image('14-ghh-人有头发', 'assets/images/14-ghh-人有头发.png');
         this.load.image('14-gnm-人没化妆', 'assets/images/14-gnm-人没化妆.png');
         this.load.image('14-gb-人放大', 'assets/images/14-gb-人放大.png');
+        this.load.image('14-gb-人腮红', 'assets/images/14-gb-人腮红.png');
         this.load.image('14-gb2-人放大2', 'assets/images/14-gb2-人放大2.png');
         this.load.image('14-gpp-人粉扑', 'assets/images/14-gpp-人粉扑.png');
         this.load.image('14-gl-人口红', 'assets/images/14-gl-人口红.png');
@@ -87,139 +88,139 @@ class Scene14 extends Phaser.Scene {
         this.dialogQueue = [
             {
                 speaker: '猫',
-                text: '打开化妆箱！开始干活',
+                text: 'Open the makeup kit! Lets get started.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show": "14-cb" }],
                 displayDuration: 2000
             },
             {
                 speaker: '人',
-                text: '那我们直接开始化妆吗？',
+                text: 'So, do we just start with the makeup?？',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '等等，先把假发给她接上',
+                text: 'Wait, first, lets put on her wig.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-wig", "passSwitch": "14-ghh" }],
                 displayDuration: 2000
             },
             {
                 speaker: '人',
-                text: '好的',
+                text: 'Ok',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '给她用温水擦一下脸',
+                text: 'Use warm water to gently wipe her face.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-fa", "passSwitch": '14-wf' }, { "bg-switch": "14-bedb1" }, { "passSwitch": "14-gnm" }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '下一步，开始化妆吧',
+                text: 'Next, lets begin the makeup.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '猫',
-                text: '首先拿出粉底液，给死者脸上均匀肤色，第一步先涂抹额头，然后脸颊左边，最后脸颊',
+                text: ' First, take the foundation and apply an even layer to her face. Start with the forehead, then the left cheek, and finally the right cheek.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-lf", "passSwitch": "14-glf1" }, { "show&drag": "14-lf", "passSwitch": "14-glf2" }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '拿出遮瑕，给死者去除脸上的痘印',
+                text: 'Take the concealer and remove any blemishes on her face.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-con", "passSwitch": "14-gcon1" },],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '现在去除一下乌青',
+                text: ' Now, lets take care of the dark circles.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-con", "passSwitch": "14-gcon2" }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '好的，接下来定妆吧',
+                text: 'Good, now lets set the makeup.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-pp", "passSwitch": "14-gpp" }, { "bg-switch": "14-bedb2" }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '现在，开始彩妆部分',
+                text: 'Now, lets move on to the colour makeup.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '猫',
-                text: '首先，涂抹眼影在女孩的眼皮，先左边后右边',
+                text: 'First, apply eyeshadow to her eyelids—left side first, then right.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-es", "passSwitch": "14-ges1" }, { "show&drag": "14-es", "passSwitch": "14-ges2" }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '下一步，画眼线和眉毛，先画完眼线再画睫毛，也是先左边后右边',
+                text: 'Next, draw the eyeliner and eyebrows. Do the eyeliner first, then apply mascara—again, the left side first, then the right side.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-epel", "passSwitch": "14-gepel1" }, { "show&drag": "14-epel", "passSwitch": "14-gepel2" }, { "show&drag": "14-epel", "passSwitch": "14-gepel3" }, { "show&drag": "14-epel", "passSwitch": "14-gepel4" },],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '不要忘记睫毛！请使用假睫毛给她贴上',
+                text: 'Dont forget the eyelashes! Use the false lashes and carefully apply them.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show": "14-ebc" },],
                 displayDuration: 2000
             },
             {
                 speaker: '旁白',
-                text: '(点击盒子)',
+                text: '(Click the box)',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&click": "14-ebc", "itemSwitch": "14-ebo" }, { "show&drag": "14-el", "passSwitch": "14-gel1" }, { "show&drag": "14-er", "passSwitch": "14-gel2" }, { "destroy": "14-ebc" }, { "bg-switch": "14-bedb3" }, { "passSwitch": "14-gb2" }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '好的，加油快结束了，给她在面中和鼻子以及下巴打上腮红',
+                text: 'Alright, just a bit more. Apply blush to her cheeks, nose, and chin.',
                 dialogKey: 'dialog-cat',
-                trigger: [{ "show&drag": "14-b", "passSwitch": "14-gb" }],
+                trigger: [{ "show&drag": "14-b", "passSwitch": "14-gb1" }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '最后一步，涂上口红，等两秒',
+                text: 'Final step—apply lipstick and wait for a moment.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&drag": "14-l", "passSwitch": "14-gl" }],
                 displayDuration: 2000
             },
             {
                 speaker: '人',
-                text: '结束了！！她看起来比原来好多了！想来也是一件令人高兴的事情',
+                text: 'Done!! She looks so much better now! I guess thats something to be happy about.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '恭喜你，成功完成这一次化妆任务',
+                text: 'Congratulations! You have successfully completed the makeup task.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "destroy": "14-ebc" },],
             },
             {
                 speaker: '人',
-                text: '那咱们下一步是干什么？',
+                text: 'So, whats the next step?',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '【喵】从这里走出去，家属在外面，我们需要对接一下后续',
+                text: ' Lets head out from here. The family is waiting outside. We need to coordinate the next steps with them.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '好的',
+                text: 'Ok',
                 dialogKey: 'dialog-user',
             },
         ];
@@ -414,6 +415,12 @@ class Scene14 extends Phaser.Scene {
             {
                 key: '14-gb',
                 imageKey: '14-gb-人放大',
+                x: this.centerX,
+                y: this.centerY
+            },
+            {
+                key: '14-gb1',
+                imageKey: '14-gb-人腮红',
                 x: this.centerX,
                 y: this.centerY
             },
@@ -658,7 +665,7 @@ class Scene14 extends Phaser.Scene {
                 let targetY = this.girl.y + item.targetOffsetY; // 人物头部的y坐标
                 let distance = Phaser.Math.Distance.Between(draggableItem.x, draggableItem.y, targetX, targetY);
 
-                if (distance < 400) { // 拖拽成功
+                if (distance < 1000) { // 拖拽成功
                     this.isActedCorrectly = true;
                     draggableItem.destroy(); // 拖拽成功后移除物品
                     delete this[item.key];

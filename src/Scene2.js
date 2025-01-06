@@ -41,8 +41,8 @@ export default class Scene2 extends Phaser.Scene {
 
         // 定义对话内容队列
         this.dialogQueue = [
-            { speaker: '猫', text: '你好', dialogKey: 'db-2-cat' },
-            { speaker: '猫', text: '点击按钮开始游戏', dialogKey: 'db-2-cat' },
+            { speaker: '猫', text: 'Hello', dialogKey: 'db-2-cat' },
+            { speaker: '猫', text: 'Press button to start', dialogKey: 'db-2-cat' },
         ];
 
         // 创建对话管理器，并在对话结束时执行zoomOutScene

@@ -37,17 +37,17 @@ class Scene18 extends Phaser.Scene {
         this.dialogQueue = [
             {
                 speaker: '猫',
-                text: '你来了？',
+                text: ' You are here?',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '来了老板',
+                text: 'I am here, boss.',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '恭喜你，你被录取了',
+                text: 'Congratulations, you ve been hired.',
                 dialogKey: 'dialog-cat',
             },
             {
@@ -57,34 +57,34 @@ class Scene18 extends Phaser.Scene {
             },
             {
                 speaker: '人',
-                text: '真的吗？！谢谢老板',
+                text: 'Really?! Thank you, boss!',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '【喵】不用谢，是你的表现很良好，我在你身上看到了身为入殓师的职责和信念，所以请你在接下来的工作当中继续保持',
+                text: ' There is no need to thank me. Your performance impressed me. I can see the responsibility and belief of a mortician in you. So, keep it up in your future work.',
                 dialogKey: 'dialog-cat',
                 trigger: [{ "show&click": "18-al", "destroy": '18-al' }],
                 displayDuration: 2000
             },
             {
                 speaker: '猫',
-                text: '入殓师，是一名很有意思的职业，我们接触着不一样的关于死亡的故事，不断的让已经冰冷的人散发生机，给他们永恒的美丽。这要有冷静，准确，而且要怀着温柔的情感，在分别的时刻，送别故人。因此，请怀着尊敬的一颗心，不断走下去。',
+                text: 'Being a mortician is a interesting job. We encounter different stories of death, continually bringing life back to those cold and giving them eternal beauty. This requires calmness, precision, and a gentle heart as we bid farewell to the departed at the moment of separation. So, continue on with a respectful heart.',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '好的【嘀咕】中间有一段是不是电影入殓师的话啊.....',
+                text: 'Got it. [muttering] Wasn t that part from the movie about morticians, Departures…',
                 dialogKey: 'dialog-user',
             },
             {
                 speaker: '猫',
-                text: '【喵】我知道！！忘词了借鉴一下不行吗',
+                text: 'I know! I forgot the lines, so I borrowed a little.Okay?',
                 dialogKey: 'dialog-cat',
             },
             {
                 speaker: '人',
-                text: '没问题！老板！',
+                text: 'No problem, boss!',
                 dialogKey: 'dialog-user',
             },
         ];

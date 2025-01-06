@@ -32,7 +32,7 @@ export default class Dialog {
 
         // 合并默认文字样式和自定义样式
         const defaultTextStyle = {
-            fontSize: '48px',
+            fontSize: '40px',
             color: '#ffffff',
             fontStyle: 'bold',
             align: 'center',

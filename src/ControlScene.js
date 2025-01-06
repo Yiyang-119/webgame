@@ -7,7 +7,7 @@ export default class ControlScene extends Phaser.Scene {
     }
     preload() {
         // 加载背景音乐
-        this.load.audio('bgMusic', 'assets/sound/Torin Borrowdale - Zen Mode Soundtrack (OST).mp3');
+        this.load.audio('bgMusic', 'assets/sound/1123.mp3');
     }
 
     create() {

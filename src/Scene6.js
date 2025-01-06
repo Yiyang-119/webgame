@@ -61,7 +61,7 @@ export default class Scene6 extends Phaser.Scene {
             dialogY: this.centerY + 400,
             dialogScale: 0.3,
             textStyle: {
-                fontSize: '60px',
+                fontSize: '30px',
                 color: '#fffff0',
                 wordWrap: { width: 1000, useAdvancedWrap: true }
             }
@@ -69,16 +69,16 @@ export default class Scene6 extends Phaser.Scene {
 
         // 定义对话队列时，只需写特有属性
         this.dialogQueue = [
-            { speaker: '死者家属', text: '死者家属:你好！', dialogKey: 'db-5-user', textOffsetX: 0, textOffsetY: 0 },
-            { speaker: '人', text: '你好，我是Atropos\'殡仪馆的工作人员！现在由我负责林宥茹女士的后事，请您放心交给我。床上那位女士是林宥茹女士吗？', dialogKey: 'db-5-user' },
-            { speaker: '猫', text: '【喵一声】表现的不错', dialogKey: 'db-5-cat' },
-            { speaker: '死者家属', text: '死者家属:是的，那是我妈妈', dialogKey: 'db-5-user' },
-            { speaker: '死者家属', text: '死者家属:【看着猫，面露困惑】这里怎么会有一只猫？', dialogKey: 'db-5-user' },
-            { speaker: '人', text: '哈哈，这是本店的吉祥物，您放心，他是一只聪明的猫，会远离咱们的处理现场的', dialogKey: 'db-5-user' },
-            { speaker: '猫', text: '【喵】你说谁吉祥物？', dialogKey: 'db-5-cat' },
-            { speaker: '死者家属', text: '死者家属:【点点头】好的，没事，反正我妈妈生前也比较喜欢猫....', dialogKey: 'db-5-user' },
-            { speaker: '死者家属', text: '死者家属:【哽咽】您开始处理吧', dialogKey: 'db-5-user' },
-            { speaker: '人', text: '好的，您节哀。我开始处理了', dialogKey: 'db-5-user' }
+            { speaker: '死者家属', text: 'Family of the departed: Hello!', dialogKey: 'db-5-user', textOffsetX: 0, textOffsetY: 0 },
+            { speaker: '人', text: 'Hello, I am the staff of Atropos Funeral Home! I am now in charge of handling Ms. Lin Your s funeral arrangements. Please rest assured and leave everything to me. Is that lady on the bed Ms Youru Lin?', dialogKey: 'db-5-user' },
+            { speaker: '猫', text: '[Meows] Well done!', dialogKey: 'db-5-cat' },
+            { speaker: '死者家属', text: 'Family of the departed:   Yes, that is my mother', dialogKey: 'db-5-user' },
+            { speaker: '死者家属', text: 'Family of the departed: [Looks at the cat, puzzled] Why is there a cat here?', dialogKey: 'db-5-user' },
+            { speaker: '人', text: 'Haha, this is the mascot of Atropos Funeral Home. Don t worry, he s a clever cat—he knows to stay away from the work area.', dialogKey: 'db-5-user' },
+            { speaker: '猫', text: ' [Meow] Who are you calling a mascot?', dialogKey: 'db-5-cat' },
+            { speaker: '死者家属', text: 'Family of the departed:   [Nods] Alright, it s fine. My mom liked cats when she was alive anyway...', dialogKey: 'db-5-user' },
+            { speaker: '死者家属', text: 'Family of the departed: [choking] Please start.', dialogKey: 'db-5-user' },
+            { speaker: '人', text: 'Alright, my condolences to you. I will get started now', dialogKey: 'db-5-user' }
         ].map(dialog => {
             // 将默认参数与对话独有参数合并
             return { ...defaultDialogProps, ...dialog };
@@ -114,9 +114,9 @@ export default class Scene6 extends Phaser.Scene {
             ease: 'Sine.easeInOut',
             onComplete: () => {
                 this.secondDialogQueue = [
-                    { speaker: '人', text: '（这位女士神情看起来很幸福，想来也是寿终正寝了）', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: '猫', text: '人类！你发什么呆！！快把草席拿出来呀', dialogKey: 'db-5-cat', fontSize: '80px' },
-                    { speaker: '人', text: '哦哦，好的', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: '人', text: '(This lady looks so peaceful. She must have passed away naturally, living a full life.)', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: '猫', text: ' Human! What are you staring at! Hurry up and bring out the mat!', dialogKey: 'db-5-cat', fontSize: '80px' },
+                    { speaker: '人', text: 'Oh, okay.', dialogKey: 'db-5-user', fontSize: '80px' },
                 ];
 
                 this.secondDialogManager = new DialogManager(this, {
@@ -125,7 +125,7 @@ export default class Scene6 extends Phaser.Scene {
                         // 第二轮对话结束后，为老人添加点击交互，将其移动到草席上
                         this.strawMat = this.add.image(this.centerX, this.centerY + 700, 'sm-6').setScale(1).setDepth(1);
                         this.thirdDialogQueue = [
-                            { speaker: '猫', text: '现在将她放在草席上', dialogKey: 'db-5-cat', fontSize: '80px' }
+                            { speaker: '猫', text: ' Now put her on the straw mat', dialogKey: 'db-5-cat', fontSize: '80px' }
                         ];
 
                         this.thirdDialogManager = new DialogManager(this, {
@@ -213,8 +213,8 @@ export default class Scene6 extends Phaser.Scene {
                 ease: 'Sine.easeInOut',
                 onComplete: () => {
                     this.forthDialogQueue = [
-                        { speaker: '猫', text: '现在打开你随身携带的箱子', dialogKey: 'db-5-cat', fontSize: '80px' },
-                        { speaker: '人', text: '收到', dialogKey: 'db-5-user', fontSize: '80px' },
+                        { speaker: '猫', text: 'now open the box you re carrying with you', dialogKey: 'db-5-cat', fontSize: '80px' },
+                        { speaker: '人', text: 'ok', dialogKey: 'db-5-user', fontSize: '80px' },
                     ];
 
                     this.forthDialogManager = new DialogManager(this, {
@@ -265,28 +265,28 @@ export default class Scene6 extends Phaser.Scene {
                 ];
 
                 this.fifthDialogQueue = [
-                    { speaker: '人', text: '哇！好齐全的东西！！有好多好看的寿衣诶', dialogKey: 'db-5-cat', fontSize: '80px' },
-                    { speaker: '猫', text: '......', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: '猫', text: '这些寿衣不是不同款式的，是要给这位女士全部穿上的。', dialogKey: 'db-5-cat', fontSize: '80px' },
-                    { speaker: 'Atropos', text: 'Atropos：请按顺序给她穿上，不要弄混了！！', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: '人', text: '好的', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: 'Atropos', text: 'Atropos：一共要穿7件寿衣', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: 'Atropos', text: 'Atropos：首先，请先给死者穿上最基本的衬衣，衬衣是从右边数第一件上衣，它没有什么别的花纹', dialogKey: 'db-5-user', fontSize: '80px', trigger: [1], displayDuration: 2000 },
-                    { speaker: 'Atropos', text: 'Atropos：接下来，请给死者穿上衬裤，从右边数第一件裤子', dialogKey: 'db-5-user', fontSize: '80px', trigger: [2], displayDuration: 2000 },
-                    { speaker: 'Atropos', text: 'Atropos：下一步，请给死者穿上从右边数第二件上衣，它在袖子上有花纹，这一件是棉衣', dialogKey: 'db-5-user', fontSize: '80px', trigger: [3], displayDuration: 2000 },
-                    { speaker: 'Atropos', text: 'Atropos：现在，请给死者穿上从右边数第二件裤子，它的上面有花纹，这一件是棉裤', dialogKey: 'db-5-user', fontSize: '80px', trigger: [4], displayDuration: 2000 },
-                    { speaker: 'Atropos', text: 'Atropos：接下来，请给死者穿上从右边数第三件上衣，它的衣服上面有花纹，这一件是罩衣', dialogKey: 'db-5-user', fontSize: '80px', trigger: [5], displayDuration: 2000 },
-                    { speaker: 'Atropos', text: 'Atropos：然后请给死者穿上从右边数最后一件裤子，这一件是罩裤，只有两个简单的星星图案', dialogKey: 'db-5-user', fontSize: '80px', trigger: [6], displayDuration: 2000 },
-                    { speaker: 'Atropos', text: 'Atropos：最后请给死者穿上从右边数最后一件上衣，这一件是棉袍', dialogKey: 'db-5-user', fontSize: '80px', trigger: [7], displayDuration: 2000 },
-                    { speaker: '人', text: '哇！这一件好好看！', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: 'Atropos', text: 'Atropos：是的，因为这是最外层的衣服，所以要很精良', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: 'Atropos', text: 'Atropos：现在我们的所有寿衣就穿好了', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: '人', text: '！太好了', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: 'Atropos', text: 'Atropos：不要高兴太早，咱们还没有结束', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: 'Atropos', text: 'Atropos：现在，请先后给老人枕上箱子里的头枕和脚枕', dialogKey: 'db-5-user', fontSize: '80px', trigger: [8, 9], displayDuration: 2000 },
-                    { speaker: 'Atropos', text: 'Atropos：最后一步，给老人带上戒指和手镯', dialogKey: 'db-5-user', fontSize: '80px', trigger: [10, 11], displayDuration: 2000 },
-                    { speaker: '人', text: '！！！结束了，我好厉害', dialogKey: 'db-5-user', fontSize: '80px' },
-                    { speaker: 'Atropos', text: 'Atropos：哼！表现的不错，恭喜你顺利完成这些步骤！接下来我们回殡仪馆吧', dialogKey: 'db-5-user', fontSize: '80px' }
+                    { speaker: '人', text: 'wow! What a complete outfit! There are so many nice looking Burial clothes eh', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: '猫', text: '......', dialogKey: 'db-5-cat', fontSize: '80px' },
+                    { speaker: '猫', text: 'These are not different styles of Burial clothes， they are meant to be worn by this lady all together.', dialogKey: 'db-5-cat', fontSize: '80px' },
+                    { speaker: 'Atropos', text: 'please put them on her in order, don t get them mixed up!', dialogKey: 'db-5-cat', fontSize: '80px' },
+                    { speaker: '人', text: 'ok', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: 'Atropos', text: 'there are a total of 7 Burial clothes，to be put on', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: 'Atropos', text: 'first of all, please put the basic shirt on the The departed first, the shirt is the first top from the right, it doesnt have any other patterns', dialogKey: 'db-5-user', fontSize: '80px', trigger: [1], displayDuration: 2000 },
+                    { speaker: 'Atropos', text: 'Next, please dress the deceased in trousers, the first pair of trousers from the right.', dialogKey: 'db-5-user', fontSize: '80px', trigger: [2], displayDuration: 2000 },
+                    { speaker: 'Atropos', text: 'Next, please dress the deceased in the second shirt from the right, it has a pattern on the sleeves, this one is a cotton shirt', dialogKey: 'db-5-user', fontSize: '80px', trigger: [3], displayDuration: 2000 },
+                    { speaker: 'Atropos', text: 'Now, please dress the deceased in the second pair of trousers from the right, which have a pattern on the top.', dialogKey: 'db-5-user', fontSize: '80px', trigger: [4], displayDuration: 2000 },
+                    { speaker: 'Atropos', text: 'Now, please dress the deceased in the third blouse from the right, which has a pattern on it, this one is a smock.', dialogKey: 'db-5-user', fontSize: '80px', trigger: [5], displayDuration: 2000 },
+                    { speaker: 'Atropos', text: 'Next, please put on the last trouser from the right, which is a coverall with two simple stars.', dialogKey: 'db-5-user', fontSize: '80px', trigger: [6], displayDuration: 2000 },
+                    { speaker: 'Atropos', text: 'And finally, please put on the last blouse from the right, which is a cotton robe.', dialogKey: 'db-5-user', fontSize: '80px', trigger: [7], displayDuration: 2000 },
+                    { speaker: '人', text: 'Wow! That is a nice one！', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: 'Atropos', text: 'Yes, because it is the outermost layer of clothing, so it must be very fine', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: 'Atropos', text: 'and now we have all our burial clothes on!', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: '人', text: '！That is great.', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: 'Atropos', text: 'don t get too excited, we are not done yet', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: 'Atropos', text: 'Now, please put the head and foot pillows from the box under the departed', dialogKey: 'db-5-user', fontSize: '80px', trigger: [8, 9], displayDuration: 2000 },
+                    { speaker: 'Atropos', text: 'Lastly, put a ring and a bracelet on the departed', dialogKey: 'db-5-user', fontSize: '80px', trigger: [10, 11], displayDuration: 2000 },
+                    { speaker: '人', text: '!!! It s over, I am so good', dialogKey: 'db-5-user', fontSize: '80px' },
+                    { speaker: 'Atropos', text: 'Hmph! Well done, and congratulations on successfully completing these steps! Lets head back to the funeral home next', dialogKey: 'db-5-user', fontSize: '80px' }
                 ];
 
 
@@ -340,7 +340,7 @@ export default class Scene6 extends Phaser.Scene {
                             const distance = Phaser.Math.Distance.Between(itemCenterX, itemCenterY, oldManCenterX, oldManCenterY);
 
                             // 如果距离小于 100，认为物品被放置在正确的位置
-                            if (this.order_of_clothes == item_order && distance < 400) {
+                            if (this.order_of_clothes == item_order && distance < 600) {
                                 // 替换老人图片并删除物品
                                 this.oldMan.setTexture(`6-${item.key.split('-')[1]}-老人${item.key.split('-')[2]}-${item_order}`); // 替换老人图片为对应的物品
                                 draggableItem.destroy(); // 删除物品

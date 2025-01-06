@@ -18,12 +18,12 @@ export default class Scene7 extends Phaser.Scene {
 
         // 对话内容
         const dialogues = [
-            '人：接下来我们干什么？',
-            'Atropos’：移动尸体放入冰柜，没事我已经将她放进去运回殡仪馆了',
-            '人：我不用准备葬礼仪式吗？',
-            'Atropos’：过两天会有其他人类去准备葬礼仪式，这不是你初级入殓师要学习的内容',
-            'Atropos’：等结束完仪式，咱们去火葬馆陪死者家属走接下来的仪式',
-            '人：好的'
+            'You：What do we do next?',
+            'Atropos’：move the body into the freezer, its okay I have already put her in there and transported her back to the funeral home',
+            'You：don t I have to prepare the funeral service?',
+            'Atropos’：: in a couple of days there will be other person to prepare the funeral rituals, its not something you learn as a beginner mortician',
+            'Atropos’：after the ceremony, lets go to the crematorium to accompany the family of the deceased to go through the next ceremony',
+            'You：Okay'
         ];
 
         let currentText = '';

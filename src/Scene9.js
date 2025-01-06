@@ -28,14 +28,20 @@ export default class Scene9 extends Phaser.Scene {
 
         // 定义对话内容队列
         this.dialogQueue = [
-            { speaker: '人', text: '（好美的地方）', dialogKey: 'dialog-user' },
-            { speaker: '猫', text: '【喵】是的，这是我们专门挑选的海域！非常梦幻的一片海域，可以给来的人带来温和和美好，本王挑选的不错吧', dialogKey: 'dialog-cat' },
-            { speaker: '死者家属', text: '【流泪】您终于看到大海了，这是您梦寐以求的海洋', dialogKey: 'dialog-user' },
-            { speaker: '死者家属', text: '【哽咽的讲故事】我的妈妈小的时候，是生活在海洋附近的岛屿上的……（故事继续）', dialogKey: 'dialog-user' },
-            { speaker: '人', text: '【流泪】看到这么美丽的海您的母亲一定会感到开心的', dialogKey: 'dialog-user' },
-            { speaker: '人', text: '（呜呜呜呜呜呜）', dialogKey: 'dialog-user' },
-            { speaker: '死者家属', text: '谢谢，我希望她下辈子可以不那么辛苦了，可以永远开开心心的看一辈子的海', dialogKey: 'dialog-user' },
-            { speaker: '人', text: '一定会的', dialogKey: 'dialog-user' },
+            { speaker: '人', text: '(What a beautiful place)', dialogKey: 'dialog-user' },
+            { speaker: '猫', text: '[Meow] Yes, this is the sea we have specially selected! A very dreamy piece of ocean that can bring gentleness and beauty to those who come to it, the king picked it well, didnt he?', dialogKey: 'dialog-cat' },
+            { speaker: '死者家属', text: '(Family of the departed)[in tears] You finally see the sea, its the sea you have always dreamed of!', dialogKey: 'dialog-user' },
+            { speaker: '死者家属', text: '(Family of the departed) [sobbing and telling a story] When my mom was little, she lived on an island near the ocean.', dialogKey: 'dialog-user' },
+            { speaker: '死者家属', text: '(Family of the departed) My grandma supported her and her sisters by fishing every day as her job. She told me that what she looked forward to most every day when she was a child was sitting on the beach and watching the sun gradually rise over the surface of the sea, and that she would feel immensely happy and contented at such times.', dialogKey: 'dialog-user' },
+            { speaker: '死者家属', text: '(Family of the departed) Later, because of the national policy, she left the island and came to the city. Then she and my father gave birth to me, Since that day, she has been tirelessly toiling and working hard to support my sister and me, striving to earn money and provide us with a better living environment. ', dialogKey: 'dialog-user' },
+            { speaker: '死者家属', text: '(Family of the departed) I always thought that when I grew up and made money, I would take her to see many, many oceans and welcome that wonderful moment. But after taking her to see it a few times, she slowly got old and couldnt walk anymore, so she never saw the sea since ten years ago.', dialogKey: 'dialog-user' },
+            { speaker: '死者家属', text: '(Family of the departed) But she always chanted about seeing the sea, always remembering the ocean, some time ago, she felt that she could not do so she told us to let us bury her ashes in the ocean, so that after her death, she can also see the sea forever ....... Now I come to fulfil your wish,mom.', dialogKey: 'dialog-user' },
+
+            
+            { speaker: '人', text: '[weeping] Your mother will be happy to see such a beautiful sea', dialogKey: 'dialog-user' },
+            { speaker: '人', text: '（whimpering, whimpering, whimpering）', dialogKey: 'dialog-user' },
+            { speaker: '死者家属', text: 'Family of the departed: Thank you, I hope that in her next life she will not be so hard, and can enjoy ocean happily.', dialogKey: 'dialog-user' },
+            { speaker: '人', text: 'I am sure she will.', dialogKey: 'dialog-user' },
         ];
 
         // 创建对话管理器
@@ -94,8 +100,8 @@ export default class Scene9 extends Phaser.Scene {
             alpha: 1,
             duration: 2000,
             onComplete: () => {
-                // 在黑屏后切换到第二幕
-                this.scene.start('Scene2'); // 假设你要跳转到第二幕
+                // 在黑屏后切换到第十幕
+                this.scene.start('Scene10'); // 假设你要跳转到第10幕
             }
         });
     }

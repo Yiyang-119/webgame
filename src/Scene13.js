@@ -31,12 +31,12 @@ class Scene13 extends Phaser.Scene {
         this.dialogQueue = [
             {
                 speaker: '猫',
-                text: '这里是殡仪馆的遗体化妆间，是殡仪师用来工作化妆的地方',
+                text: 'This is the mortuary makeup room, where embalmers work and prepare the deceased.',
                 dialogKey: 'dialog-cat'
             },
             {
                 speaker: '猫',
-                text: '现在我们开始进入工作状态吧',
+                text: 'Now, lets get to work.',
                 dialogKey: 'dialog-cat'
             }
         ];

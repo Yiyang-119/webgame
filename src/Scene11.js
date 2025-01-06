@@ -33,19 +33,19 @@ class Scene11 extends Phaser.Scene {
 
         // 定义对话内容队列
         this.dialogQueue = [
-            { speaker: '猫', text: 'hello？你在发什么呆', dialogKey: 'dialog-cat' },
-            { speaker: '人', text: '没有，我在回味上次的葬礼仪式......感觉布置殡葬场景很有意思', dialogKey: 'dialog-user' },
-            { speaker: '猫', text: '不用着急，这一次的流程当中有这个环节', dialogKey: 'dialog-cat' },
-            { speaker: '人', text: '咦？真的吗', dialogKey: 'dialog-user' },
-            { speaker: '猫', text: '【喵】真的，因为前段时间Atropos\'殡仪馆那位殡葬场景布置师回家了', dialogKey: 'dialog-cat' },
+            { speaker: '猫', text: 'Hello? What are you daydreaming about?', dialogKey: 'dialog-cat' },
+            { speaker: '人', text: 'Nothing, just reminiscing about the last funeral ceremony... I thought setting up the funeral scene was really interesting.', dialogKey: 'dialog-user' },
+            { speaker: '猫', text: 'No need to rush. There s this part of the process this time, too.', dialogKey: 'dialog-cat' },
+            { speaker: '人', text: 'Huh? Really?', dialogKey: 'dialog-user' },
+            { speaker: '猫', text: ' Of course, the funeral scene designer from Atropos funeral home recently went home.', dialogKey: 'dialog-cat' },
             { speaker: '人', text: '......', dialogKey: 'dialog-user' },
-            { speaker: '人', text: '（合着是没人干了呗）', dialogKey: 'dialog-user' },
-            { speaker: '猫', text: '【看了一眼】干什么，人家休假？你一个实习生还想休假吗？', dialogKey: 'dialog-cat' },
-            { speaker: '人', text: '没有......', dialogKey: 'dialog-user' },
-            { speaker: '猫', text: '【冷哼】哼，这次任务做好了，赏你三天假期', dialogKey: 'dialog-cat' },
-            { speaker: '人', text: '（！！！）感谢老板大恩大德', dialogKey: 'dialog-user' },
-            { speaker: '猫', text: '好了，不跟你废话了，现在我给你第二位死者的档案袋，这里交代了她的一些基本信息，仔细看！', dialogKey: 'dialog-cat' },
-            { speaker: '人', text: '收到', dialogKey: 'dialog-user' }
+            { speaker: '人', text: '（So... there s no one left to do it.）', dialogKey: 'dialog-user' },
+            { speaker: '猫', text: '[Glances at the person] What? They are on vacation. You are an intern. Do you get vacations, too?', dialogKey: 'dialog-cat' },
+            { speaker: '人', text: 'No...', dialogKey: 'dialog-user' },
+            { speaker: '猫', text: 'Hmph. I will reward you with three days off if you do well on this task.', dialogKey: 'dialog-cat' },
+            { speaker: '人', text: '!!! Thank you for your great kindness, boss!', dialogKey: 'dialog-user' },
+            { speaker: '猫', text: 'Alright, enough chitchat. I am giving you the second deceased person s file. It contains some basic information, so pay attention and look carefully!', dialogKey: 'dialog-cat' },
+            { speaker: '人', text: 'Ok', dialogKey: 'dialog-user' }
         ];
 
         // 创建对话管理器，并在对话结束时执行zoomOutScene
@@ -92,9 +92,9 @@ class Scene11 extends Phaser.Scene {
 
                 // 定义对话内容队列
                 this.dialogQueue = [
-                    { speaker: '人', text: '这位死者，真是可惜啊......', dialogKey: 'dialog-user' },
-                    { speaker: '猫', text: '停，收起你那没用的同理心，好好工作。这些死者最需要的是一个完整且完美的殡葬流程', dialogKey: 'dialog-cat' },
-                    { speaker: '人', text: '好的', dialogKey: 'dialog-user' },
+                    { speaker: '人', text: 'Its such a pity about this deceased person...', dialogKey: 'dialog-user' },
+                    { speaker: '猫', text: 'Stop. Put away your useless sympathy and focus on the work. What these deceased need the most is a complete and perfect funeral process.', dialogKey: 'dialog-cat' },
+                    { speaker: '人', text: 'Ok', dialogKey: 'dialog-user' },
                 ];
 
                 // 创建对话管理器，并在对话结束时执行zoomOutScene
